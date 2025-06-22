@@ -1,0 +1,111 @@
+{
+    "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+    "info": {
+        "id": "628451",
+        "name": "Kiosk Kaffee",
+        "cloudinaryImageId": "d4680a71533e82c95a66205f92c76cde",
+        "locality": "Apte Road",
+        "areaName": "Shivaji Nagar",
+        "costForTwo": "₹350 for two",
+        "cuisines": [
+            "Beverages",
+            "Desserts",
+            "Cafe",
+            "Snacks"
+        ],
+        "avgRating": 4.6,
+        "veg": true,
+        "parentId": "118722",
+        "avgRatingString": "4.6",
+        "totalRatingsString": "117",
+        "promoted": true,
+        "adTrackingId": "cid=28571684~p=2~adgrpid=28571684#ag1~mp=SWIGGY_IN~bl=FOOD~aet=RESTAURANT~aeid=628451~plpr=COLLECTION~eid=86fcc25d-b882-4c35-a782-515b52723328~srvts=1746362913469~collid=147970",
+        "sla": {
+            "deliveryTime": 15,
+            "lastMileTravel": 1.3,
+            "serviceability": "SERVICEABLE",
+            "slaString": "15-20 mins",
+            "lastMileTravelString": "1.3 km",
+            "iconType": "ICON_TYPE_EMPTY"
+        },
+        "availability": {
+            "nextCloseTime": "2025-05-04 23:30:00",
+            "opened": true
+        },
+        "badges": {
+            "imageBadges": [
+                {
+                    "imageId": "bolt/big%20rx%20listing%2015%20mins%20.png",
+                    "description": "bolt!"
+                }
+            ]
+        },
+        "isOpen": true,
+        "aggregatedDiscountInfoV2": {
+            "header": "₹75 OFF",
+            "shortDescriptionList": [
+                {
+                    "meta": "Use FLASHDEAL",
+                    "discountType": "Flat",
+                    "operationType": "RESTAURANT"
+                }
+            ],
+            "descriptionList": [
+                {
+                    "meta": "Flat ₹75 off | Use FLASHDEAL",
+                    "discountType": "Flat",
+                    "operationType": "RESTAURANT"
+                }
+            ]
+        },
+        "type": "F",
+        "badgesV2": {
+            "entityBadges": {
+                "imageBased": {
+                    "badgeObject": [
+                        {
+                            "attributes": {
+                                "description": "bolt!",
+                                "imageId": "bolt/big%20rx%20listing%2015%20mins%20.png"
+                            }
+                        }
+                    ]
+                },
+                "textBased": {},
+                "textExtendedBadges": {}
+            }
+        },
+        "orderabilityCommunication": {
+            "title": {},
+            "subTitle": {},
+            "message": {},
+            "customIcon": {}
+        },
+        "differentiatedUi": {
+            "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+            "differentiatedUiMediaDetails": {
+                "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                "lottie": {},
+                "video": {}
+            }
+        },
+        "reviewsSummary": {},
+        "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+        "restaurantOfferPresentationInfo": {},
+        "externalRatings": {
+            "aggregatedRating": {
+                "rating": "--"
+            }
+        },
+        "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+    },
+    "analytics": {
+        "context": "seo-data-ce0e889a-8de2-4394-afc8-899e48b0fcc4"
+    },
+    "cta": {
+        "link": "https://www.swiggy.com/city/pune/kiosk-kaffee-apte-road-shivaji-nagar-rest628451",
+        "text": "RESTAURANT_MENU",
+        "type": "WEBLINK"
+    },
+    "widgetId": "collectionV5RestaurantListWidget_byName"
+}

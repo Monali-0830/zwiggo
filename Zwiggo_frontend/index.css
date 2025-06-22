@@ -1,0 +1,389 @@
+.restaurant-header {
+    padding: 20px;
+}
+
+/* Top rated restaurants button */
+.btn {
+    padding: 8px 16px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s;
+    margin-top: 15px;
+}
+
+.btn:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+.btn:focus {
+    outline: none;
+}
+
+.btn:active {
+    background-color: #1e7e34;
+}
+
+
+.restaurant-info {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.menu-top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 0 20px;
+}
+
+.menu-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #333;
+    text-align: center;
+    font-size: 2rem; /* Optional: makes the title more prominent */
+    margin-top: 2rem;
+}
+
+/* Button styles (reuse previous button CSS) */
+.filterr_butn {
+    display: flex;
+    gap: 1rem;
+}
+
+.veg-btn,
+.best-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-size: 1rem;
+}
+
+.veg-btn {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.veg-btn:hover {
+    background-color: #45a049;
+}
+
+.best-btn {
+    background-color: #FF9800;
+    color: white;
+}
+
+.best-btn:hover {
+    background-color: #e68900;
+}
+
+
+
+.menu-list {
+    list-style: none;
+    padding: 0;
+}
+
+.filterr_butn {
+    display: flex;
+    gap: 1rem;
+    margin: 20px 0;
+    justify-content: center;
+}
+
+
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.item-text {
+    flex: 1;
+    font-size: 16px;
+}
+
+.item-image {
+    width: 100px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.menu-container {
+    padding: 20px 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.restaurant-info {
+    margin-bottom: 20px;
+}
+
+
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 20px;
+}
+
+.menu-card {
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    padding: 20px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.menu-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+.menu-text h3 {
+    margin: 0 0 8px;
+    color: #2c3e50;
+    font-size: 20px;
+}
+
+.price {
+    font-weight: bold;
+    color: #4CAF50;
+    font-size: 18px;
+    margin-bottom: 6px;
+}
+
+.desc {
+    font-size: 14px;
+    color: #666;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+.filter-btn {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    gap: 10px; /* Adds spacing between search-bar and top rated button */
+    margin: 20px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    gap: 5px; /* space between input and button */
+}
+
+.search-box {
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.search-btn {
+    padding: 8px 12px;
+    font-size: 16px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.search-btn:hover {
+    background-color: #45a049;
+}
+
+
+body {
+    overflow-x: hidden;
+    padding: 0px;
+    margin: 0px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.brand-title {
+    font-size: 28px;
+    color: #2c3e50;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.nav-items {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-items ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-items ul li a {
+    text-decoration: none;
+    color: #5a189a;
+    font-size: 18px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-items ul li a:hover {
+    color: #9d4edd;
+}
+
+/* Keep the button styles same as before */
+
+
+.search {
+    padding: 5px;
+    margin: 5px;
+}
+
+.res-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%; /* ensures even height in a grid */
+    background-color: beige;
+}
+.res-card:hover {
+    border: 1px solid blue;
+    cursor: pointer;
+}
+
+.reslogo {
+    height: 150px;
+    width: 100%;
+    object-fit: cover; /* ensures image doesn't overflow or distort */
+}
+
+/* Ensure text inside cards doesn't overflow */
+.res-card h3, .res-card p {
+    margin: 5px 0;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.res-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    max-width: 100%;
+    margin: auto;
+    padding: 20px;
+}
+
+
+.btn {
+    margin: 10px;
+}
+
+.shimmer-container{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.shimmer-card{
+    height: 300px;
+    width: 200px;
+    margin: 10px;
+    background-color: beige;
+}
+
+.round-btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%; /* makes it round */
+    border: none;
+    background-color: #4CAF50; /* pretty green, you can change it */
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* soft shadow */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.round-btn:hover {
+    background-color: #45a049;
+    transform: scale(1.05); /* little pop effect */
+}
+
+.round-btn i {
+    font-size: 20px; /* adjust for your icon */
+}
+
+.round-btn-logout {
+    background-color: #f44336; /* red */
+    cursor: pointer;
+    border-radius: 50%; /* makes it round */
+    border: none;
+    width: 50px;
+    height: 50px;
+}
+
+.round-btn-logout:hover {
+    background-color: #d32f2f; /* darker red on hover */
+    transform: scale(1.05); /* same pop effect */
+}
+
+.round-btn-logout i {
+    font-size: 20px; /* keep icon size consistent */
+}
+
+.user-card{
+    border: 1px solid black;
+}
+
+
