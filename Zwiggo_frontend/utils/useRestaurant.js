@@ -5,7 +5,7 @@ const useRestaurant = (redId) => {
 
     const fetchData = async () => {
         try {
-            const response = await fetch(`http://localhost:3000/api/menu/${redId}`);
+            const response = await fetch(`https://zwiggo-backend.onrender.com/api/menu/${redId}`);
             const json = await response.json();
             console.log(json.data);
             setresinfo(json.data);
