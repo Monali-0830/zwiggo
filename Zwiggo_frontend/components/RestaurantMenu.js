@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import Shimmer from "../utils/shimmer";
+import MenuShimmer from "./MenuShimmer";
 import { useParams } from "react-router-dom";
 import { MENU_IMAGE_URL } from "../utils/constants";
 import useRestaurant from "../utils/useRestaurant";
@@ -30,7 +30,7 @@ useEffect(() => {
     }
 }, [resmenu]);
 
-    if (!resmenu) return <Shimmer />;
+    if (!resmenu) return <MenuShimmer />;
 
     const { name, cuisines, costForTwoMessage } =
     resmenu?.cards?.find(card => card?.card?.card?.info)?.card?.card?.info || {};
