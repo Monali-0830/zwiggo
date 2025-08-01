@@ -18,10 +18,10 @@ const Itemlist = ({ items }) => {
       {items.map((item, index) => (
         <div
           key={`${item.card.info.id}-${index}`}
-          className="p-4 mb-4 bg-gray-100 border border-gray-300 rounded-lg text-left flex justify-between items-start w-full"
+          className="p-4 mb-4 bg-gray-100 border border-gray-300 rounded-lg text-left flex flex-wrap md:flex-nowrap justify-between items-start w-full"
         >
-          {/* LEFT: Item Text Info */}
-          <div className="w-9/12 pr-4">
+          {/* LEFT: Text Info */}
+          <div className="flex-1 min-w-[200px] pr-4">
             <div className="py-2">
               <span className="font-semibold text-gray-800">
                 {item.card.info.name}
@@ -38,33 +38,30 @@ const Itemlist = ({ items }) => {
             </p>
           </div>
 
-          {/* RIGHT: Image + Button Group */}
-          <div className="w-3/12 relative">
+          {/* RIGHT: Image + Button */}
+          <div className="min-w-[120px] max-w-[160px] flex flex-col items-center mt-4 md:mt-0">
             <img
               src={CDN_URL + item.card.info.imageId}
               alt="food"
-              className="w-full rounded-lg object-cover"
+              className="w-full h-24 rounded-lg object-cover"
             />
 
-            {/* Quantity Buttons */}
-            <div className="absolute bottom-2 left-1/2 transform -translate-x-1/2">
-              <div className="flex items-center space-x-3 bg-white px-4 py-2 rounded-full shadow-md border border-gray-200">
-                <button
-                  onClick={() => handleRemove(item.card.info.id)}
-                  className="text-lg font-bold text-white bg-red-500 w-8 h-8 flex items-center justify-center rounded-full hover:bg-red-600 transition duration-200"
-                >
-                  –
-                </button>
-                <span className="text-gray-800 font-semibold">
-                  {item.quantity}
-                </span>
-                <button
-                  onClick={() => handleAdd(item)}
-                  className="text-lg font-bold text-white bg-green-500 w-8 h-8 flex items-center justify-center rounded-full hover:bg-green-600 transition duration-200"
-                >
-                  +
-                </button>
-              </div>
+            <div className="mt-2 flex items-center space-x-3 bg-white px-4 py-2 rounded-full shadow-md border border-gray-200">
+              <button
+                onClick={() => handleRemove(item.card.info.id)}
+                className="text-lg font-bold text-white bg-red-500 w-8 h-8 flex items-center justify-center rounded-full hover:bg-red-600"
+              >
+                –
+              </button>
+              <span className="text-gray-800 font-semibold">
+                {item.quantity}
+              </span>
+              <button
+                onClick={() => handleAdd(item)}
+                className="text-lg font-bold text-white bg-green-500 w-8 h-8 flex items-center justify-center rounded-full hover:bg-green-600"
+              >
+                +
+              </button>
             </div>
           </div>
         </div>
@@ -74,3 +71,4 @@ const Itemlist = ({ items }) => {
 };
 
 export default Itemlist;
+
